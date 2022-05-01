@@ -1,0 +1,463 @@
+:root{
+    --Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+}
+
+*{
+    box-sizing: border-box;
+    hyphens: none;
+}
+.bg{
+    /* width:100vw; */
+    background: url('./images/bg-curve-desktop.svg');
+    background-size:contain;
+    background-position: center;
+    /* background-attachment: fixed; */
+    height: fit-content;
+    background-repeat:no-repeat ;
+}
+body{
+    width:100vw;
+    padding:0;
+
+    /* overflow-x: hidden; */
+    
+}
+main{
+    width:100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 10%; 
+    /* overflow: hidden; */
+    margin-top: -20px;
+    /* width:fit-content; */
+    font-size: 1rem ;
+}
+
+ul{
+    display: flex;
+    gap:0.8rem;
+    list-style-type: none;
+    font-size:0.8rem;
+    color: var(--Dark-Blue);
+    font-family: "open sans"
+}
+p{
+    font-family: "Open Sans";
+}
+.flex{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    min-height:70vh;
+    max-height:fit-content;
+    width: 90%;
+    margin:5vh auto;
+}
+.flex p{
+    font-size:0.8rem;
+}
+.flex h1{
+    font-weight: 700;
+}
+.flex-inp{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1rem;
+}
+.flex-inp input{
+    padding: 0.2rem;
+    font-family:"Raleway";
+    font-size:0.7rem;
+
+}
+.flex-inp button{
+    background: var(--Bright-Blue);
+    color: white;
+    border:none;
+    padding: 0.2rem;
+    font-size: 0.7rem;
+    font-family:"Raleway"
+}
+.flex h1{
+    font-family: "Raleway";
+}
+
+.flex-1, .flex-2{
+    width:60%;
+    white-space:wrap;
+}
+
+.flex-bg{
+    background: var(--Light-Grayish-Blue);
+    width:100%;
+    padding: 0 5%;
+    margin-top: -5%;
+}
+.flex-2 .under{
+    color:var(--Moderate-Cyan);
+    font-family: "Open Sans";
+    font-weight:400;
+    width:fit-content;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+    padding: 0 10px 5px ;
+    border-bottom: 2px solid var(--Moderate-Cyan);
+}
+.flex-2 .under:hover{
+    border:none;
+    cursor: pointer;
+}
+/* .flex-2 h4::after{
+    content:"great";
+    width:100%;
+    height:1px;
+    background: var(--Moderate-Cyan);
+} */
+.testimonial{
+    background: #fff;
+    max-width:300px;
+    height:fit-content;
+    padding: 1rem;
+    margin:1rem;
+    
+}
+
+.testimonial p{
+    hyphens: none;
+    font-size: 12px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    line-height: 1.2rem;
+}
+.testimonial .quote{
+    height:1rem;
+    border-radius: 0;
+    
+}
+.testimonial img{
+    height: 50px;
+    border-radius: 50%;
+}
+.testifier{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+}
+
+.testifier h3 {
+    font-size: 0.8rem;
+    margin-top:1rem;
+    font-family: "Open Sans";
+}
+.testifier h4{
+    font-size: 0.6rem;
+    font-weight:400;
+    margin-top: -0.7rem;
+    font-family: "Open Sans";
+}
+
+
+.access{
+    background: var(--Desaturated-Blue);
+    color:#fff;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    align-content: start;
+    justify-items: center;
+    padding: 4rem 2rem;
+    margin: -1.8rem auto 2rem;
+    /* min-height:60vh; */
+}
+
+.access div{
+    margin-top:-1rem;
+}
+.access input, .access h2{
+    padding:0.7rem;
+    max-width:20rem;
+    font-family: "Open Sans";
+    border: none;
+}
+
+.access input{
+    width: 500px;
+}
+.access h1{
+    font-family: "Raleway";
+    margin-top: 0rem;
+    font-size: 2rem;
+}
+
+.access p{
+    font-size:0.8rem;
+    max-width: 70%;
+    font-weight: 500;
+    font-family: "Open sans";
+
+}
+.access h2{
+    background:var(--Bright-Blue);
+    font-size: 0.8rem;
+    font-weight:400;
+    width:fit-content;
+}
+.foot{
+    background: var(--Dark-Blue);
+    margin-top:-2rem;
+    padding: 40px;
+    display:flex;
+    flex-direction: column;
+}
+
+.foot> img{
+    margin-bottom: 3rem;
+    width: 150px;
+}
+
+.footer{
+    display:grid;
+    min-height:50vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:2.4rem;
+    justify-content: space-around;
+    color:white;
+    font-family: "Raleway";
+    justify-content: start;
+    justify-items: start;
+}
+
+.footer h3{
+    font-weight:400;
+    font-size: 1rem;
+}
+
+/* .footer-1{
+     margin-top: -1.5rem;
+} */
+
+
+.footer-btn{
+    display:flex;
+    gap:1rem;
+    margin-top: 1rem;
+    height: 1rem;
+    justify-content: start;
+    align-items: center;
+}
+.details{
+    display:flex;
+    flex-direction: column;
+}
+.details h3{
+    margin-top:-5px;
+}
+.smedia{
+    display:flex;
+    flex-direction: row;
+    width:30%;
+}
+
+.smedia img{
+    height:30px;
+    /* width:50px; */
+    padding:5px;
+    /* backdrop-filter : grayscale(10%) brightness(100) invert(); */
+    filter: brightness(100) invert(0);
+    border: 2px solid ;
+    fill-rule: rgb(209, 14, 14);
+    border-radius: 50%;
+    margin:5px;
+}
+.smedia img:hover{
+    filter:none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body{
+        background-color: white;
+        /* background: blue; */
+        padding: 0;
+        width: 100vw;
+        margin-left: -5px;
+        padding:0;
+        /* overflow-x:hidden; */
+    }
+
+    .flex-img{
+        margin: 0 auto;
+        /* background-color: blue; */
+        display: block;
+        
+    }
+    
+    .bg{
+        width:100%;
+        background-image: none;
+    }
+    /* main{
+        /* width:100%; */
+        /* background: blue; 
+    } */
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 3% 10%;  */
+        /* overflow: hidden; */
+        margin: 0px auto 10px;
+        /* width:80%; */
+        font-size: 0.8rem ;
+    }
+    nav img{
+        width:70px;
+    }
+    .flex{
+        display: flex;
+        flex-direction: column-reverse;
+        gap:1rem;
+        margin: 10px 0;
+        padding: 2rem;
+        /* background-color: red; */
+        width:100%;
+    }
+    .flex p{
+        font-size: 0.9rem;
+        /* margin-bottom: -1rem; */
+    }
+
+    .flex-1, .flex-2{
+        width:100%;
+        text-align: center;
+    }
+
+    .flex-2 h1{
+        font-size:1rem;
+        margin-top: 50px;
+    }
+    .flex-2 p{
+        text-align: left;
+        color: var(--Desaturated-Blue);
+    }
+    .flex .under{
+        margin:20px auto;
+    }
+    .flex-inp{
+        display: flex;
+        flex-direction:column;
+        width:100%;
+        margin: 0 auto;
+        margin-top: 40px;;
+    }
+
+    .flex-inp button, .flex-inp input{
+        height:40px;
+        font-size:0.8rem;
+        border-radius: 5px;
+        border:1px solid var(--Light-Gray);
+        outline:none;
+        padding-left: 15px;
+        margin:0 auto;
+        width:94%;
+    }
+   
+
+    .testimonial{
+        max-width:90%;
+        text-align: initial;
+        padding:10px;
+        border-radius: 5px;
+    }
+    .testimonial .quote{
+        height: 15px;
+    }
+    .testimonial p{
+        font-size: 10.5px;
+        width: 100%;
+        margin-right: -5px;
+    }
+    .testifier img{
+        height:2.5rem;
+    }
+
+    .footer{
+        display:flex;
+        flex-direction: column;
+        height:fit-content;
+    }
+
+    .footer>div{
+        padding-bottom: 2rem;
+        border-bottom: 1px dashed hsla(0, 0%, 75%, 0.452);
+    }
+    .access{
+        width: 100%;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+    }
+    .access>div{
+        width:100%;
+    }
+
+    .access p{
+        max-width:90%;
+        font-weight: normal;
+        font-size: 14px;
+    }
+    .access input,.access h2{
+        padding:1rem;
+        width:80%;
+        display:block;
+        margin: 20px auto 0;
+        border-radius: 0;
+        height: 1rem;
+        font-size: 12px;
+    }
+    .access input::placeholder{
+        opacity:0.5;
+    }
+
+    .access h2{
+        padding:1rem;
+        width:200px;
+        display:block;
+    }
+    .access h1{
+        font-family: "Raleway";
+        margin-top: 0rem;
+        font-size:20px;
+    }
+    
+   
+    .access h2{
+        width:80%;
+        padding:0.5rem 0;
+        height: fit-content;
+        margin: 5px auto;
+    }    
+
+    .smedia{
+        display:flex;
+        flex-direction: row;
+        margin:0 auto;
+    }
+    footer{
+        max-width: 80%;
+    }
+    
+}
